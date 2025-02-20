@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Todo App
 
-## Getting Started
+A simple and efficient Todo App built with Next.js. This app allows users to add, edit, delete, and change the status of the task. The app uses MongoDB Atlas to store and persist tasks across sessions, ensuring reliable and scalable data management.
 
-First, run the development server:
+## Table of Contents
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Acknowledgments](#acknowledgments)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Add Tasks**: Users can add new tasks with a title and optional due date.
+- **Edit Tasks**: Users can edit the text of existing tasks (due date editing might be included).
+- **Delete Tasks**: Tasks can be deleted when no longer needed.
+- **Change Status**: Users have the flexibility to update the status of their tasks, with clear visual cues indicating progress.
+- **Persistent Storage**: Tasks are securely stored in MongoDB Atlas, ensuring they persist across sessions and can be accessed from any device.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **MainComponent**: The main container that manages the state of the entire application and handles adding, editing, deleting, and completing tasks.
+- **AddComponent**: A form component for adding new tasks.
+- **ListComponent**: Displays a list of tasks.
+- **TaskItem**: A single task item that supports editing, deletion, and marking as complete.
 
-## Learn More
+## Technologies Used
+- **Next.js: React framework for building the user interface with server-side rendering and static site generation
+- **ESLint:** Ensuring code quality
+- **Tailwind CSS: Utility-first CSS framework for styling components efficiently
+- **Vercel:** Deployment platform for hosting the application with ease
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
+- Node.js and npm installed on your local machine.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/behnam-nbt/todo-app.git
+   cd todo-app
+   npm install
+## Usage
+- **Adding a Task:** Enter a task description and optional due date in the input fields and click "Add Task".
+- **Editing a Task:** Click "Edit" next to a task to change its text.
+- **Deleting a Task:** Click "Delete" to remove a task.
+- **Change Status**: Users have the flexibility to update the status of their tasks, with clear visual cues indicating progress.
+- **Persistent Tasks:** The tasks you add or modify are saved to local storage, so they'll be there when you return to the app later.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgments
+- **Next.js: React framework for building the user interface with server-side rendering and static site generation
